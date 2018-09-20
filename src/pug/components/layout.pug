@@ -1,7 +1,7 @@
 //- layout.pug
 html
   head
-    title Guia Semaforo
+    title Ruffus
     block scripts
       meta(charset='utf-8')
       meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -10,4 +10,410 @@ html
       script(src='assets/js/uikit.min.js')
       script(src='assets/js/uikit-icons.min.js')
   body
+    .uk-offcanvas-content
+      .tm-page
+        .tm-header-mobile(class='uk-hidden@m')
+          nav.uk-navbar-container.uk-navbar(uk-navbar='')
+            .uk-navbar-left
+              a.uk-navbar-toggle(href='#tm-mobile', uk-toggle='')
+                .uk-navbar-toggle-icon.uk-icon(uk-navbar-toggle-icon='')
+                  svg(width='20', height='20', viewBox='0 0 20 20', xmlns='http://www.w3.org/2000/svg')
+                    rect(y='9', width='20', height='2')
+                    rect(y='3', width='20', height='2')
+                    rect(y='15', width='20', height='2')
+            .uk-navbar-center
+              a.uk-navbar-item.uk-logo(href='https://demo.yootheme.com/themes/joomla/2018/flow')
+                img(src='/themes/joomla/2018/flow/images/yootheme/logo-mobile.svg', alt='Flow')
+          #tm-mobile.uk-offcanvas(uk-offcanvas='', mode='push', overlay='')
+            .uk-offcanvas-bar
+              button.uk-offcanvas-close.uk-close.uk-icon(type='button', uk-close='')
+                svg(width='14', height='14', viewBox='0 0 14 14', xmlns='http://www.w3.org/2000/svg')
+                  line(fill='none', stroke='#000', stroke-width='1.1', x1='1', y1='1', x2='13', y2='13')
+                  line(fill='none', stroke='#000', stroke-width='1.1', x1='13', y1='1', x2='1', y2='13')
+              .uk-child-width-1-1.uk-grid(uk-grid='')
+                div
+                  #module-0.uk-panel
+                    ul.uk-nav.uk-nav-default
+                      li.uk-active
+                        a(href='/themes/joomla/2018/flow/index.php') Home
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/features') Features
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/company') Company
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/extensions') Extensions
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/support') Support
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/blog') Blog
+                      li.uk-parent
+                        a(href='/themes/joomla/2018/flow/index.php/zoo-zoo') ZOO
+                        ul.uk-nav-sub
+                          li
+                            a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/blog-zoo') Blog
+                          li
+                            a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/product-zoo') Product
+                          li
+                            a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/download-zoo') Download
+                          li
+                            a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/business-zoo') Business
+                          li
+                            a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/movie-zoo') Movie
+                          li
+                            a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/cookbook-zoo') Cookbook
+                          li
+                            a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/documentation-zoo') Documentation
+                          li
+                            a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/page-zoo') Page
+                div
+                  #module-96.uk-panel
+                    .custom
+                      a.uk-button.uk-button-primary(href='/themes/joomla/2018/flow/index.php/pricing') Buy Now
+        .tm-header.tm-header-transparent(class='uk-visible@m', uk-header='')
+          .uk-sticky(uk-sticky='', media='768', cls-active='uk-navbar-sticky', sel-target='.uk-navbar-container', animation='uk-animation-slide-top', top='.tm-header ~ [class*="uk-section"], .tm-header ~ * > [class*="uk-section"]', cls-inactive='uk-navbar-transparent uk-light', style='')
+            .uk-navbar-container.uk-navbar-transparent.uk-light
+              .uk-container
+                nav.uk-navbar(uk-navbar='{"align":"center","boundary":"!.uk-navbar-container"}')
+                  .uk-navbar-left
+                    a.uk-navbar-item.uk-logo(href='https://demo.yootheme.com/themes/joomla/2018/flow')
+                      img(src='/themes/joomla/2018/flow/images/yootheme/logo.svg', alt='Flow')
+                      img.uk-logo-inverse(src='/themes/joomla/2018/flow/images/yootheme/logo-inverse.svg', alt='Flow')
+                  .uk-navbar-right
+                    ul.uk-navbar-nav
+                      li.uk-active
+                        a(href='/themes/joomla/2018/flow/index.php') Home
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/features') Features
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/company') Company
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/extensions') Extensions
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/support') Support
+                      li
+                        a(href='/themes/joomla/2018/flow/index.php/blog') Blog
+                      li.uk-parent
+                        a(href='/themes/joomla/2018/flow/index.php/zoo-zoo') ZOO
+                        .uk-navbar-dropdown
+                          .uk-navbar-dropdown-grid.uk-child-width-1-1.uk-grid(uk-grid='')
+                            div
+                              ul.uk-nav.uk-navbar-dropdown-nav
+                                li
+                                  a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/blog-zoo') Blog
+                                li
+                                  a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/product-zoo') Product
+                                li
+                                  a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/download-zoo') Download
+                                li
+                                  a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/business-zoo') Business
+                                li
+                                  a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/movie-zoo') Movie
+                                li
+                                  a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/cookbook-zoo') Cookbook
+                                li
+                                  a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/documentation-zoo') Documentation
+                                li
+                                  a(href='/themes/joomla/2018/flow/index.php/zoo-zoo/page-zoo') Page
+                    #module-94.uk-navbar-item
+                      .custom
+                        a.uk-button.uk-button-primary(href='/themes/joomla/2018/flow/index.php/pricing') Buy Now
+          .uk-sticky-placeholder(style='height: 100px; margin: 0px;', hidden='')
+        #system-message-container
+        .uk-section-default(uk-scrollspy='{"target":"[uk-scrollspy-class]","cls":"uk-animation-slide-bottom-medium","delay":200}', tm-header-transparent='light')
+          .uk-background-norepeat.uk-background-cover.uk-background-bottom-center.uk-section.uk-section-xlarge.uk-padding-remove-bottom(data-src='/themes/joomla/2018/flow/images/yootheme/home-hero-bg.svg', uk-img='', style='background-image: url("https://demo.yootheme.com/themes/joomla/2018/flow/images/yootheme/home-hero-bg.svg");')
+            .uk-container
+              .uk-margin-remove-bottom.uk-margin-medium.uk-grid.uk-grid-stack(uk-grid='')
+                .uk-light.uk-first-column(class='uk-width-1-1@m')
+                  h1.uk-text-center.uk-heading-primary.uk-scrollspy-inview.uk-animation-slide-bottom-medium(uk-scrollspy-class='', style='')
+                    | Organize Your Life
+                  .uk-margin-medium.uk-width-xxlarge.uk-margin-auto.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom-medium(uk-scrollspy-class='', style='')
+                    | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet.
+                  .uk-margin.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom-medium(uk-scrollspy-class='', style='')
+                    a.el-content.uk-button.uk-button-primary.uk-button-large(href='#features', uk-scroll='')
+                      | LET'S GO!
+                  .uk-margin-large.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom-medium(uk-scrollspy-class='', style='')
+                    img.el-image.uk-border-rounded.uk-box-shadow-medium(data-src='/themes/joomla/2018/flow/templates/yootheme/cache/home-hero-3151a413.webp', data-srcset='/themes/joomla/2018/flow/templates/yootheme/cache/home-hero-9c94fc98.webp 768w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-b8ae4289.webp 1024w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-3151a413.webp 1100w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-b773ea6e.webp 1366w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-9bb2cb97.webp 1598w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-27223f80.webp 1599w', data-sizes='(min-width: 1100px) 1100px', data-width='1600', data-height='1000', alt='', uk-img='', src='https://demo.yootheme.com/themes/joomla/2018/flow/templates/yootheme/cache/home-hero-3151a413.webp', sizes='(min-width: 1100px) 1100px', srcset='/themes/joomla/2018/flow/templates/yootheme/cache/home-hero-9c94fc98.webp 768w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-b8ae4289.webp 1024w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-3151a413.webp 1100w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-b773ea6e.webp 1366w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-9bb2cb97.webp 1598w, /themes/joomla/2018/flow/templates/yootheme/cache/home-hero-27223f80.webp 1599w')
+        #features.uk-section-default.uk-section.uk-section-xlarge(uk-scrollspy='{"target":"[uk-scrollspy-class]","cls":"uk-animation-slide-bottom","delay":200}')
+          .uk-container
+            .uk-container.uk-grid-margin-large
+              .uk-grid-large.uk-flex-middle.uk-grid(uk-grid='')
+                .uk-grid-item-match.uk-first-column(class='uk-width-expand@m')
+                  .uk-grid-item-match
+                    .uk-background-norepeat.uk-background-center-left.uk-tile(style='background-image: url("https://demo.yootheme.com/themes/joomla/2018/flow/images/yootheme/home-features-bg-01.svg"); background-size: 330px 330px; background-position-y: calc(50% + 170px);', data-src='/themes/joomla/2018/flow/images/yootheme/home-features-bg-01.svg', uk-img='', class='uk-background-image@m', uk-parallax='bgy: 170,0')
+                      .uk-margin.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom(uk-scrollspy-class='', style='')
+                        img.el-image(data-src='/themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-73a4d355.webp', data-srcset='/themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-73a4d355.webp 620w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-e515da41.webp 768w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-3052d49a.webp 1024w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-b1ec509e.webp 1240w', data-sizes='(min-width: 620px) 620px', data-width='1240', data-height='1360', alt='', uk-img='', src='https://demo.yootheme.com/themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-73a4d355.webp', sizes='(min-width: 620px) 620px', srcset='/themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-73a4d355.webp 620w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-e515da41.webp 768w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-3052d49a.webp 1024w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-01-b1ec509e.webp 1240w')
+                div(class='uk-width-expand@m')
+                  h2.uk-margin-auto.uk-text-center.uk-h1.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-width-xlarge@s uk-text-left@m', uk-scrollspy-class='', style='')
+                    | Get a Detailed Overview Of All Your Projects
+                  .uk-margin-medium.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit.
+                  .uk-margin-large.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    a.el-content.uk-button.uk-button-primary(href='/themes/joomla/2018/flow/index.php/features')
+                      | Learn More
+            .uk-container.uk-margin-xlarge
+              .uk-grid-large.uk-flex-middle.uk-grid(uk-grid='')
+                div(class='uk-width-expand@m')
+                  .uk-margin.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom(uk-scrollspy-class='', style='')
+                    img.el-image(data-src='/themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-ad4628bd.webp', data-srcset='/themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-ad4628bd.webp 620w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-faee4a79.webp 768w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-95146b16.webp 1024w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-0adf0cd4.webp 1240w', data-sizes='(min-width: 620px) 620px', data-width='1240', data-height='1300', alt='', uk-img='', src='https://demo.yootheme.com/themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-ad4628bd.webp', sizes='(min-width: 620px) 620px', srcset='/themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-ad4628bd.webp 620w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-faee4a79.webp 768w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-95146b16.webp 1024w, /themes/joomla/2018/flow/templates/yootheme/cache/home-features-02-0adf0cd4.webp 1240w')
+                .uk-first-column(class='uk-width-expand@m uk-flex-first@m')
+                  h2.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-h1.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    | Share Your Ideas With Your Friends
+                  .uk-margin-medium.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit.
+                  .uk-margin-large.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    a.el-content.uk-button.uk-button-primary(href='/themes/joomla/2018/flow/index.php/features')
+                      | Learn More
+            .uk-container.uk-margin-xlarge
+              .uk-grid-large.uk-flex-middle.uk-grid(uk-grid='')
+                .uk-grid-item-match.uk-first-column(class='uk-width-expand@m')
+                  .uk-grid-item-match
+                    .uk-background-norepeat.uk-background-top-left.uk-tile(style='background-image: url("https://demo.yootheme.com/themes/joomla/2018/flow/images/yootheme/home-features-bg-02.svg"); background-size: 410px 410px; background-position-y: calc(0px);', data-src='/themes/joomla/2018/flow/images/yootheme/home-features-bg-02.svg', uk-img='', class='uk-background-image@m', uk-parallax='bgy: 0,30')
+                      .uk-margin.uk-text-center.uk-scrollspy-inview.uk-animation-fade(uk-scrollspy-class='uk-animation-fade', style='')
+                        img.el-image(data-src='/themes/joomla/2018/flow/images/yootheme/home-features-03.svg', alt='', uk-img='', width='620', src='https://demo.yootheme.com/themes/joomla/2018/flow/images/yootheme/home-features-03.svg')
+                div(class='uk-width-expand@m')
+                  h2.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-h1.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    | Benefit From a Huge Collection of Extensions
+                  .uk-margin-medium.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit.
+                  .uk-margin-large.uk-width-xlarge.uk-margin-auto.uk-text-center.uk-scrollspy-inview.uk-animation-slide-bottom(class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    .uk-flex-middle.uk-child-width-auto.uk-flex-center.uk-grid(class='uk-flex-left@m', uk-grid='')
+                      .el-item.uk-first-column
+                        a.el-content.uk-button.uk-button-secondary(href='/themes/joomla/2018/flow/index.php/extensions')
+                          | Get Extensions
+                      .el-item
+                        a.el-content.uk-button.uk-button-primary(href='/themes/joomla/2018/flow/index.php/extensions#cyo')
+                          | Be One of Us
+        .uk-section-default(uk-scrollspy='{"target":"[uk-scrollspy-class]","cls":"uk-animation-slide-bottom-small","delay":200}')
+          .uk-background-norepeat.uk-background-top-right.uk-section(style='background-image: url("https://demo.yootheme.com/themes/joomla/2018/flow/images/yootheme/home-pricing-bg.svg"); background-size: 570px 525px; background-position-y: calc(220px);', data-src='/themes/joomla/2018/flow/images/yootheme/home-pricing-bg.svg', uk-img='', uk-parallax='bgy: 220,-70')
+            .uk-container
+              .uk-container.uk-margin-xlarge
+                .uk-grid.uk-grid-stack(uk-grid='')
+                  .uk-first-column(class='uk-width-1-1@m')
+                    h2.uk-width-xxlarge.uk-margin-auto.uk-text-center.uk-h1.uk-scrollspy-inview.uk-animation-slide-bottom-small(uk-scrollspy-class='', style='')
+                      | Flow Is a Simple Way to Manage Projects With Your Entire Team
+              .uk-grid-margin.uk-grid(uk-grid='')
+                .uk-first-column(class='uk-width-expand@m')
+                  .uk-margin.uk-width-large.uk-margin-auto.uk-text-center.uk-card.uk-card-default.uk-card-large.uk-card-body.uk-scrollspy-inview.uk-animation-slide-bottom-small(id='page#36', class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    .el-meta.uk-margin.uk-h4.uk-margin-remove-adjacent Free
+                    h3.el-title.uk-margin.uk-heading-hero
+                      | 0
+                      span.tm-pricing €
+                    .el-content.uk-margin
+                      p
+                        | Monthly payment
+                        br
+                        |  Minimum term 6 months
+                      .uk-margin-medium
+                        ul.uk-list
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  Access to Video Courses
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  Access for Two Devices
+                          li
+                            img.uk-margin-small-right.uk-text-danger(src='/themes/joomla/2018/flow/images/yootheme/pricing-cross.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-danger.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-width='3', d='M3.5 3.5l13.1 13.1M16.6 3.5L3.5 16.6')
+                            |  30-Days Free Trial
+                          li
+                            img.uk-margin-small-right.uk-text-danger(src='/themes/joomla/2018/flow/images/yootheme/pricing-cross.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-danger.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-width='3', d='M3.5 3.5l13.1 13.1M16.6 3.5L3.5 16.6')
+                            |  Unlimited Projects
+                    p
+                      a.el-link.uk-button.uk-button-secondary.uk-button-large(href='/themes/joomla/2018/flow/index.php/pricing') Download
+                div(class='uk-width-expand@m')
+                  .uk-margin.uk-width-large.uk-margin-auto.uk-text-center.uk-card.uk-card-default.uk-card-large.uk-card-body.uk-scrollspy-inview.uk-animation-slide-bottom-small(id='page#38', class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    .el-meta.uk-margin.uk-h4.uk-margin-remove-adjacent Standard
+                    h3.el-title.uk-margin.uk-heading-hero
+                      | 12
+                      span.tm-pricing €
+                    .el-content.uk-margin
+                      p
+                        | Monthly payment
+                        br
+                        |  Minimum term 6 months
+                      .uk-margin-medium
+                        ul.uk-list
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  Access to Video Courses
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  Access for Two Devices
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  30-Days Free Trial
+                          li
+                            img.uk-margin-small-right.uk-text-danger(src='/themes/joomla/2018/flow/images/yootheme/pricing-cross.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-danger.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-width='3', d='M3.5 3.5l13.1 13.1M16.6 3.5L3.5 16.6')
+                            |  Unlimited Projects
+                    p
+                      a.el-link.uk-button.uk-button-primary.uk-button-large(href='/themes/joomla/2018/flow/index.php/pricing') Download
+                div(class='uk-width-expand@m')
+                  .uk-margin.uk-width-large.uk-margin-auto.uk-text-center.uk-card.uk-card-default.uk-card-large.uk-card-body.uk-scrollspy-inview.uk-animation-slide-bottom-small(id='page#40', class='uk-text-left@m', uk-scrollspy-class='', style='')
+                    .el-meta.uk-margin.uk-h4.uk-margin-remove-adjacent Advanced
+                    h3.el-title.uk-margin.uk-heading-hero
+                      | 49
+                      span.tm-pricing €
+                    .el-content.uk-margin
+                      p
+                        | Monthly payment
+                        br
+                        |  Minimum term 6 months
+                      .uk-margin-medium
+                        ul.uk-list
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  Access to Video Courses
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  Access for Two Devices
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  30-Days Free Trial
+                          li
+                            img.uk-margin-small-right.uk-text-primary(src='/themes/joomla/2018/flow/images/yootheme/pricing-check.svg', uk-svg='', hidden='true')
+                            svg.uk-margin-small-right.uk-text-primary.uk-svg(xmlns='http://www.w3.org/2000/svg', width='20', height='20')
+                              path(fill='none', stroke='#000', stroke-linecap='round', stroke-linejoin='round', stroke-width='3', d='M2.5 8.7L8.4 16 18.5 4.5')
+                            |  Unlimited Projects
+                    p
+                      a.el-link.uk-button.uk-button-primary.uk-button-large(href='/themes/joomla/2018/flow/index.php/pricing') Download
+        .uk-section-default.uk-section
+          .uk-container
+            .uk-grid-margin.uk-grid.uk-grid-stack(uk-grid='')
+              .uk-first-column(class='uk-width-1-1@m')
+                .uk-margin.uk-text-center.uk-child-width-1-1.uk-grid-match.uk-grid-large.uk-grid(class='uk-text-left@m uk-child-width-1-2@m', uk-grid='')
+                  .uk-first-column
+                    .uk-width-xlarge.uk-margin-auto.el-item.uk-panel
+                      .uk-child-width-expand.uk-grid-medium.uk-grid(uk-grid='')
+                        .uk-first-column(class='uk-width-auto@m')
+                          img.el-image(data-src='/themes/joomla/2018/flow/images/yootheme/home-pricing-check.svg', alt='', uk-img='', width='42', height='42', src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42"></svg>')
+                        div
+                          h3.el-title.uk-margin
+                            | Join Our Community
+                          .el-content.uk-margin
+                            | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+                          p
+                            a.el-link.uk-button.uk-button-text(uk-scroll='', href='#') Read more
+                  div
+                    .uk-width-xlarge.uk-margin-auto.el-item.uk-panel
+                      .uk-child-width-expand.uk-grid-medium.uk-grid(uk-grid='')
+                        .uk-first-column(class='uk-width-auto@m')
+                          img.el-image(data-src='/themes/joomla/2018/flow/images/yootheme/home-pricing-check.svg', alt='', uk-img='', width='42', height='42', src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42"></svg>')
+                        div
+                          h3.el-title.uk-margin
+                            | Looking for Support?
+                          .el-content.uk-margin
+                            | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+                          p
+                            a.el-link.uk-button.uk-button-text(href='/themes/joomla/2018/flow/index.php/company#team') Read more
+        .uk-section-default.uk-section
+          .uk-container
+            .uk-margin-large.uk-grid.uk-grid-stack(uk-grid='')
+              .uk-grid-item-match.uk-first-column(class='uk-width-1-1@m')
+                .uk-tile-primary.uk-tile.uk-tile-small
+                  div
+                    form.uk-form.uk-panel.js-form-newsletter(method='post', action='/themes/joomla/2018/flow/index.php?p=theme%2Fnewsletter%2Fsubscribe&option=com_ajax&style=9')
+                      .uk-grid-small.uk-grid(uk-grid='', class='uk-child-width-expand@s')
+                        .uk-first-column
+                          input.uk-input.el-input.uk-form-large.uk-form-blank(type='email', name='email', placeholder='Sign up for Newsletter', required='')
+                        div(class='uk-width-auto@s')
+                          button.el-button.uk-button.uk-button-default.uk-button-large(type='submit') Send
+                      input(type='hidden', name='settings', value='9yhlikfRhpN/xtY/PPri0w==.aG1SbFB2NmcvY0hzNTZTSUcweUlqZ3pvdVJlVnhBS2xGV3ErOVpOQTBielk4Zm04S1ROQklpak9tL1ZmU3VJYzN1VnpXWFNEME9rWnFVSHVPd3BKTG1McjFmays0UE9TUy9TaXlGS2kranc4ajBQMENob0dLOWQwNVhuTnhwZ1dwS0Q2dUxVek1zdE9tTy9qeXFkM25ZeWhjZjdJMlJDN2pJUnNlaU5aT1NJeXZDQ0lWczM4TG1VQVhhVzBvY1l3NS9Sbjc1bVpxQms0WGlxaFozZllPL0ZXcjBJVnJobVRqQ3J0djdEdHl4ZEEyc0p4SzhibDc3b0xvYzAyQU1vZnRVejlhR1RrbkNnOHA2MXlQbStwcEJ2bFJSV0NXb1l3ZldSR1RmV3dueWM9.MzE2NDIwNjU5M2E0NGVjNzZjZGEwOGU5YTI5ZThmODI3OGYyZWE2MmY3MTQzZTBkYWExNzM5ZjBkODEzNjA2Ng==')
+                      .message.uk-margin.uk-hidden
+            .uk-margin-xlarge.uk-grid(uk-grid='')
+              .uk-first-column(class='uk-width-expand@m uk-width-1-2@s')
+                h4.uk-margin-medium.uk-text-center(class='uk-text-left@s')
+                  | Product
+                ul.uk-text-center.uk-list(class='uk-text-left@s')
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/pricing') Pricing
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/features') Features
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/extensions') Extensions
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/extensions#plugins') Plugins
+              div(class='uk-width-expand@m uk-width-1-2@s')
+                h4.uk-text-center(class='uk-text-left@s')
+                  | Company
+                ul.uk-margin-medium.uk-text-center.uk-list(class='uk-text-left@s')
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/company') About
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/company#community') Jobs
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/blog') Blog
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='#', uk-scroll='') Terms of Service
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='#', uk-scroll='') Privacy Policy
+              div(class='uk-width-expand@m uk-width-1-2@s')
+                h4.uk-margin-medium.uk-text-center(class='uk-text-left@s')
+                  | Learn & Support
+                ul.uk-text-center.uk-list(class='uk-text-left@s')
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/support') Support
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/support') Documentation
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/support#tutorials') Tutorials
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/pricing#faq') FAQ
+                  li.el-item
+                    .el-content.uk-h6
+                      a.el-link.uk-link-muted(href='/themes/joomla/2018/flow/index.php/company#contact') Contact
+              div(class='uk-width-expand@m uk-width-1-2@s')
+                h4.uk-text-center(class='uk-text-left@s')
+                  | Crossover Platform
+                .uk-margin.uk-text-center(class='uk-text-left@s')
+                  img.el-image(data-src='/themes/joomla/2018/flow/images/yootheme/footer-logos.svg', alt='', uk-img='')
+            .uk-margin-large.uk-grid.uk-grid-stack(uk-grid='')
+              .uk-first-column(class='uk-width-1-1@m')
+                hr
+            .uk-margin.uk-grid(uk-grid='')
+              .uk-first-column(class='uk-width-expand@m')
+                .uk-margin.uk-text-center(class='uk-text-left@s')
+                  img.el-image(data-src='/themes/joomla/2018/flow/images/yootheme/logo.svg', alt='', uk-img='')
+              div(class='uk-width-expand@m')
+                .uk-margin.uk-text-center(class='uk-text-right@s')
+                  .uk-child-width-auto.uk-grid-small.uk-flex-center.uk-grid(class='uk-flex-right@s', uk-grid='')
+                    div
+                      a.el-link.uk-icon-button.uk-icon(uk-icon='icon: twitter', href='https://twitter.com/', target='_blank')
+                    div
+                      a.el-link.uk-icon-button.uk-icon(uk-icon='icon: facebook', href='https://facebook.com/', target='_blank')
+                    div
+                      a.el-link.uk-icon-button.uk-icon(uk-icon='icon: github', href='https://github.com/', target='_blank')
     block content  
